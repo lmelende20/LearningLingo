@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearningLingo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="/Images/favicon.png" />
+    <meta property="og:title" content="LearningLingo" />
+    <meta name="description" content="A new way to learn new languages!"/>
+    <meta property="og:image" content="/Images/favicon.png" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Learning<span>Lingo</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="Images/menu.svg" alt="Open Navigation">
+            
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="Images/exit.svg" alt="Close Navigation">
+                <ul class="primary-nav">
+                    <li>
+                        <a class="current" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                    <li>
+                        <a href="#">Languages</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li>
+                        <a href="#" class="go-premium-btn">Go Premium</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <section class="hero-section">
+        <div class="left-col">
+            <h2>It's fun and easy</h2>
+            <h1>Learn a new language on your time and at your own pace</h1>
+            <a href="#" class="try-btn">Try for free</a>
+        </div>
+        <img class="right-col" src="Images/heroImg.svg" alt="Woman sitting and working on her laptop">
+    </section>
+    <section class="features">
+        <ul>
+            <li>
+                <h2>Efficient and Effective</h2>
+                <p>Our courses effectively and efficiently teach reading, listening, and speaking skills. Check out our latest research!</p>
+            </li>
+            <li>
+                <h2>Personalized Learning</h2>
+                <p>Combining the best of AI and language science, lessons are tailored to help you learn at just the right level and pace.</p>
+            </li>
+            <li>
+                <h2>Stay Motivated</h2>
+                <p>We make it easy to form a habit of language learning, with game-like features, fun challenges, and remindersl.</p>
+            </li>
+            <li>
+                <h2>Have Fun With It!</h2>
+                <p>Effective learning doesn’t have to be boring! Build your skills each day with engaging exercises and playful characters.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="testimonials">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="Images/avatar.svg" alt="Person">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="Images/avatar.svg" alt="Person">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="Images/avatar.svg" alt="Person">
+                    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section class="contact">
+        <h1>Contact</h1>
+        <div class="container">
+            <div class="col-left">
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email" class="btm-contact">Email</label>
+                    <input type="text" id="email" name="email">
+
+                    <label for="message" class="btm-contact">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
+            <img class="right-col" src="Images/phone.svg" alt="Smart phone">
+        </div>
+        
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav');
+            mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
