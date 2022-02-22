@@ -229,6 +229,7 @@ body {
 }
 
 .contact .send-message-cta {
+  -webkit-appearance: none;
   margin: 2em auto;
   color: white;
   background: var(--primary-color);
